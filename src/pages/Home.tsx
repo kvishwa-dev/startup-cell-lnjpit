@@ -43,7 +43,7 @@ const Home = () => {
         </li>
 
         <li>
-          📌 Incubation applications now live
+          📌 Startup Cell Website is live now.
         </li>
       </ul>
     </div>
