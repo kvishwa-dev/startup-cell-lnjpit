@@ -104,11 +104,6 @@ const Contact = () => {
   </h2>
 
   {/* Developer Image */}
-  <img
-    src="/images/vishwajeet.jpg"
-    alt="Vishwajeet Kumar"
-    className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-xl mb-5"
-  />
 
   <p className="text-2xl font-bold">
     Vishwajeet Kumar

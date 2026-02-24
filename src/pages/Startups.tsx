@@ -1,23 +1,16 @@
 const startups = [
   {
-    name: "AgroTech Solutions",
-    founder: "Rahul Kumar",
+    name: "OG Healthy Pvt. Ltd.",
+    founder: "Anshu Raj",
     description:
-      "A smart agriculture startup providing IoT-based solutions for farmers.",
+      "Mili Mates Multigrain Cookies - Mili Mates multigrain cookies are positioned as a healthy alternative to regular biscuits, made with a blend of wholesome grains such as oats, millets, and other nutrient-rich flours. These cookies aim to offer high dietary fiber, sustained energy, and better nutrition, catering especially to health-conscious consumers and students on-the-go.",
     website: "#",
   },
   {
-    name: "EduSpark",
-    founder: "Priya Singh",
+    name: "T.K. Shah Makhana Pvt. Ltd.",
+    founder: "Shree Kant Prasad",
     description:
-      "An ed-tech platform helping rural students prepare for competitive exams.",
-    website: "#",
-  },
-  {
-    name: "HealthBridge",
-    founder: "Aman Verma",
-    description:
-      "A healthcare startup connecting patients with affordable diagnostics.",
+      "Nutri Path Ready-to-Eat Makhana & Oats - Nutri Path is a ready-to-eat snack combining makhana (fox nuts)—a traditional Indian superfood rich in protein and micronutrients—with oats, known for fiber and heart-healthy benefits. This product targets people looking for quick, tasty, yet nutritious snack options without preservatives, ideal for busy lifestyles and health-aware eating habits.",
     website: "#",
   },
 ];
@@ -32,11 +25,11 @@ const Startups = () => {
       </h1>
 
       {/* Startup Cards */}
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {startups.map((startup, index) => (
           <div
             key={index}
-            className="bg-white p-8 shadow-lg rounded-xl hover:shadow-2xl transition duration-300"
+            className="bg-white p-8 shadow-lg rounded-xl hover:shadow-2xl transition duration-300 text-center flex flex-col items-center"
           >
             <h3 className="text-xl font-semibold mb-2">
               {startup.name}
@@ -46,7 +39,7 @@ const Startups = () => {
               Founder: {startup.founder}
             </p>
 
-            <p className="mb-4 text-gray-700">
+            <p className="mb-6 text-gray-700 leading-relaxed">
               {startup.description}
             </p>
 
@@ -54,7 +47,7 @@ const Startups = () => {
               href={startup.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary font-medium hover:underline"
+              className="text-primary font-medium hover:underline mt-auto"
             >
               Visit Website →
             </a>

@@ -31,11 +31,11 @@ const Home = () => {
 
       <ul className="space-y-4 text-gray-700 text-left">
         <li className="border-b pb-3">
-          📢 Registration open for Startup Bootcamp 2025
+          📢 Registration open for InnovateNex 2.0
         </li>
 
         <li className="border-b pb-3">
-          🚀 Hackathon scheduled on 15th March
+          🚀 InnovateNex 2.0 scheduled on February 28, 2026
         </li>
 
         <li className="border-b pb-3">
