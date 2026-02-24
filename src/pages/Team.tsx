@@ -112,7 +112,7 @@ const Team = () => {
         {/* Vishwajeet Kumar */}
         <div className="bg-white p-8 shadow-lg rounded-2xl border border-gray-100 hover:shadow-2xl transition duration-300">
           <img
-            src="/images/vishwajeet.jpg"
+            src="/images/vishwa.jpg"
             alt="Vishwajeet Kumar"
             className="w-32 h-32 mx-auto rounded-full object-cover border-4 border-primary mb-6"
           />
