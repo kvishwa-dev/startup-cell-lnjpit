@@ -120,7 +120,7 @@ const Contact = () => {
             <div className="flex space-x-5 text-lg">
 
               <a
-                href="https://www.linkedin.com/in/wivk-tech/"
+                href="https://www.linkedin.com/in/kvishwa-dev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/20 p-3 rounded-full hover:bg-white hover:text-primary transition"
