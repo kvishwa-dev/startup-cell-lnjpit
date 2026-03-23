@@ -138,7 +138,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/vishwajeetofficiall/"
+                href="https://www.instagram.com/engineertic.v/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/20 p-3 rounded-full hover:bg-white hover:text-pink-500 transition"
