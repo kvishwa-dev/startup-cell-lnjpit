@@ -56,26 +56,38 @@ const Startups = () => {
       </div>
 
       {/* Bihar Startup Policy CTA Section */}
-      <div className="mt-20 max-w-4xl mx-auto bg-gradient-to-r from-primary to-indigo-600 text-white p-10 rounded-2xl shadow-lg text-center">
-        
-        <h2 className="text-3xl font-bold mb-4">
-          Have a Startup Idea?
-        </h2>
+<div className="mt-20 max-w-4xl mx-auto bg-gradient-to-r from-primary to-indigo-600 text-white p-10 rounded-2xl shadow-lg text-center">
+  
+  <h2 className="text-3xl font-bold mb-4">
+    Have a Startup Idea?
+  </h2>
 
-        <p className="mb-6 text-lg">
-          Register your startup under the Bihar Startup Policy and get
-          mentorship, incubation support, and funding opportunities.
-        </p>
+  <p className="mb-6 text-lg">
+    Register your startup under the Bihar Startup Policy and get
+    mentorship, incubation support, and funding opportunities.
+  </p>
 
-        <a
-          href="https://startup.bihar.gov.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:scale-105 transition"
-        >
-          Register / Pitch Your Idea
-        </a>
-      </div>
+  {/* Primary Button */}
+  <a
+    href="https://startup.bihar.gov.in/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:scale-105 transition mb-4"
+  >
+    Register / Pitch Your Idea
+  </a>
+
+  {/* Contact Assistance Button */}
+  <div>
+    <a
+      href="/contact" // change this to your actual contact page route
+      className="inline-block border border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition"
+    >
+      Need Assistance? Contact Us
+    </a>
+  </div>
+
+</div>
 
     </div>
   );
