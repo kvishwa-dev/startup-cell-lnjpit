@@ -2,10 +2,35 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
+/* ================= TYPES ================= */
+type NavItemProps = {
+  to: string;
+  label: string;
+  onClick?: () => void; // optional for desktop
+};
+
+/* ================= NAV ITEM ================= */
+const NavItem = ({ to, label, onClick }: NavItemProps) => (
+  <NavLink
+    to={to}
+    onClick={onClick}
+    className={({ isActive }) =>
+      `transition pb-1 ${
+        isActive
+          ? "text-primary border-b-2 border-primary"
+          : "hover:text-primary"
+      }`
+    }
+  >
+    {label}
+  </NavLink>
+);
+
+/* ================= NAVBAR ================= */
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = [
+  const navLinks: NavItemProps[] = [
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
     { to: "/initiatives", label: "Initiatives" },
@@ -17,8 +42,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md w-full sticky top-0 z-50">
-
-      {/* Top Header */}
+      
+      {/* ===== Top Header ===== */}
       <div className="w-full px-4 md:px-12 py-4 md:py-6 flex items-center justify-between gap-2">
 
         {/* Left Logo */}
@@ -28,7 +53,7 @@ const Navbar = () => {
           className="h-10 sm:h-12 md:h-20 w-auto"
         />
 
-        {/* Center Title (VISIBLE ON ALL SCREENS) */}
+        {/* Center Title */}
         <div className="text-center leading-tight flex-1 px-2">
           <h1 className="text-lg sm:text-xl md:text-3xl font-bold text-primary">
             Startup Cell
@@ -57,7 +82,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Desktop Navigation */}
+      {/* ===== Desktop Nav ===== */}
       <div className="hidden md:block border-t border-gray-200">
         <div className="flex justify-center space-x-12 py-4 font-medium text-gray-700 text-lg">
           {navLinks.map((link) => (
@@ -66,7 +91,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* ===== Mobile Nav ===== */}
       {isOpen && (
         <div className="md:hidden border-t border-gray-200 bg-white">
           <div className="flex flex-col items-center space-y-4 py-4 font-medium text-gray-700 text-lg">
@@ -74,7 +99,7 @@ const Navbar = () => {
               <NavItem
                 key={link.to}
                 {...link}
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpen(false)} // close menu on click
               />
             ))}
           </div>
@@ -83,21 +108,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
-const NavItem = ({ to, label, onClick }) => (
-  <NavLink
-    to={to}
-    onClick={onClick}
-    className={({ isActive }) =>
-      `transition pb-1 ${
-        isActive
-          ? "text-primary border-b-2 border-primary"
-          : "hover:text-primary"
-      }`
-    }
-  >
-    {label}
-  </NavLink>
-);
 
 export default Navbar;
