@@ -113,7 +113,7 @@ const Contact = () => {
             </p>
 
             <p className="mt-2 text-sm opacity-80 mb-6">
-              kvishwa@zohomail.in
+              xkvishwa@gmail.com
             </p>
 
             {/* Developer Social Media */}

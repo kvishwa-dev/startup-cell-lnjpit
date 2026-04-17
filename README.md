@@ -1,73 +1,121 @@
-# React + TypeScript + Vite
+# 🚀 Startup Cell
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, mobile-responsive web application built using **TypeScript**, **Tailwind CSS**, and modern frontend tooling. This project focuses on clean UI, scalability, and responsive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## React Compiler
+- ⚡ Fast and lightweight frontend setup  
+- 📱 Fully responsive design (mobile-first approach)  
+- 🎨 Styled with Tailwind CSS  
+- 🧩 Modular and scalable folder structure  
+- 🛠️ TypeScript support for better development experience  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+├── public/              # Static assets
+├── src/                 # Main source code
+├── index.html           # Entry HTML file
+├── package.json         # Project dependencies & scripts
+├── tailwind.config.js   # Tailwind CSS configuration
+├── postcss.config.cjs   # PostCSS configuration
+├── tsconfig*.json       # TypeScript configuration files
+├── eslint.config.js     # Linting rules
+└── README.md            # Project documentation
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Installation & Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 ```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+The production-ready files will be generated in the `dist/` folder.
+
+---
+
+## 🚀 Deployment
+
+This project is deployed using **Vercel**.
+
+To deploy your own version:
+
+1. Push your code to GitHub  
+2. Connect the repo to Vercel  
+3. Deploy with one click  
+
+---
+
+## 🧪 Scripts
+
+- `npm run dev` – Start development server  
+- `npm run build` – Build project for production  
+- `npm run preview` – Preview production build  
+
+---
+
+## 🎯 Future Improvements
+
+- Add authentication system  
+- Improve accessibility (a11y)  
+- Add unit and integration tests  
+- Backend/API integration  
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository  
+2. Create a new branch  
+3. Make your changes  
+4. Submit a pull request  
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+**Vishwajeet Kumar**
+
+---
+
+## 🌐 Live Demo
+
+👉 https://startup-cell-injpit.vercel.app
+
+---
+
+⭐ If you found this project helpful, consider giving it a star!
