@@ -1,4 +1,4 @@
-# 🚀 Startup Cell
+# 🚀 Startup Cell LNJPIT
 
 A modern, mobile-responsive web application built using **TypeScript**, **Tailwind CSS**, and modern frontend tooling. This project focuses on clean UI, scalability, and responsive design.
 
@@ -34,8 +34,8 @@ A modern, mobile-responsive web application built using **TypeScript**, **Tailwi
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/kvishwa-dev/startup-cell-lnjpit.git
+cd startup-cell-lnjpit
 ```
 
 2. Install dependencies:
