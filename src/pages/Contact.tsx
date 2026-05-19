@@ -147,7 +147,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://x.com/wivktech"
+                href="https://x.com/kvishwa_dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/20 p-3 rounded-full hover:bg-white hover:text-sky-500 transition"
